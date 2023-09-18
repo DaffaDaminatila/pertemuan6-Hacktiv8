@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tugas Mandiri 6 MUHAMMAD DAFFA DAMINATILA</title>
+  </head>
+
+  <body>
+    <p class="paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat
+      recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo
+      dolorum consequatur sed laudantium suscipit quis magni, maiores in?
+      MUHAMMAD DAFFA DAMINATILA
+    </p>
+    <p class="paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat
+      recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo
+      dolorum consequatur sed laudantium suscipit quis magni, maiores in?
+      MUHAMMAD DAFFA DAMINATILA
+    </p>
+    <p class="paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat
+      recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo
+      dolorum consequatur sed laudantium suscipit quis magni, maiores in?
+      MUHAMMAD DAFFA DAMINATILA
+    </p>
+    <script>
+      function getRandomColor() {
+        // Generate a random color in hexadecimal format
+        return "#" + Math.floor(Math.random() * 16777215).toString(16);
+      }
+
+      function animateParagraphColor() {
+        const paragraphs = document.querySelectorAll(".paragraph");
+
+        paragraphs.forEach((paragraph) => {
+          setInterval(() => {
+            const newColor = getRandomColor();
+            paragraph.style.color = newColor;
+          }, 1000); // Change color every 1000 milliseconds (1 second)
+        });
+      }
+
+      animateParagraphColor(); // Start the color animation
+    </script>
+  </body>
+</html>
